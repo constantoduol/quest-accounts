@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Quest Accounts</title>
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="quest pico" />
+    <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href='css/jquery-ui.css' rel='stylesheet' type='text/css'>
+    <link href='css/handson.css' rel='stylesheet' type='text/css'>
+    <link href='css/pos.css' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap3-typeahead.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+     <script type="text/javascript" src="js/onload.js"></script>
+    <script type="text/javascript" src="js/app-flow.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/account.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/lookups.js"></script>
+    <script type="text/javascript" src="js/settings.js"></script>
+    </head>
+    <body>
+  
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgba(0,0,0,0.8);">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <div id="logo_cont_main">
+                            <img src="img/quest-pico.png" alt="logo">
+                        </div>
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" onclick="app.loadPage({load_url: app.pages.profile,load_area : 'content_area'})">My Profile</a></li>
+                        <li><a href="#" onclick="app.loadPage({load_url: app.pages.business,load_area : 'content_area'})">Business</a></li>
+                        <li><a href="#" onclick="app.loadPage({load_url: app.pages.users,load_area : 'content_area'})">Users</a></li>
+                        <li><a href="#" id="logout_link">sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="content_area">
+          
+        </div>
+    </body>
+</html>
